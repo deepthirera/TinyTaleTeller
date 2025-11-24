@@ -1,0 +1,14 @@
+[project]
+name = "tiny-tale-teller"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "googletrans>=4.0.2",
+    "mcp-cli>=0.10.1",
+    "pandas>=2.2.3",
+    "pydantic-ai>=1.22.0",
+    "pydantic-evals>=1.22.0",
+    "python-dotenv>=1.2.1",
+]

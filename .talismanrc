@@ -1,0 +1,8 @@
+fileignoreconfig:
+- filename: uv.lock
+  checksum: 604ca29f99de8ad9b6bc925e3b2708cb00e5578ead794f802ff0bf139eda05a6
+- filename: README.md
+  checksum: 194f3f4918704cca86266fa76d7cfd2b6e0a1b176c366a993a8d3fa72405b980
+- filename: data/validation.csv
+  checksum: 53d0e25298a7182cfe4d7a21b5498ebf3108ab6e5ae4960c83123f78e42e02b4
+version: "1.0"
