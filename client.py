@@ -7,7 +7,8 @@ import asyncio
 load_dotenv()
 
 # model = "groq:openai/gpt-oss-120b"
-model = "google-gla:gemini-2.5-pro"
+# model = "google-gla:gemini-2.5-pro"
+model="gemini-2.5-flash"
 
 server = MCPServerStreamableHTTP("http://localhost:8000/mcp")
 
@@ -22,7 +23,7 @@ agent = Agent(
     toolsets=[server],
     system_prompt=(
         """
-            You are a story telling agent that tells tiny stories in english, hindi and tamil.
+            You are a story telling agent that tells tiny stories in english, or bilingual english with hindi or english with tamil .
             You have tools to do this. If the user asks for a story, give back a english story.
             If they ask for astory in tamil or hindi, then use get_story_in_other_languages tool to get in the right language.
             If you receive story in two languages from tools, show both of them to user.
